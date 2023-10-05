@@ -212,7 +212,7 @@ const Person = () => {
                     position: "absolute",
                     borderRadius: "50%",
                     top: '50%',
-                    left: '50%',
+                    left: '30%',
                     transform: "translate(-50%,-50%)",
                     width: "100px",
                     height: "100px",
@@ -223,8 +223,8 @@ const Person = () => {
                   <img src={image} className="people-card-img" alt={title} />
                 </div>
                 <div className="tour-info">
-                  <div className="tour-title">
-                    {members !== title && <h4> {title} </h4>}
+                  <div className="people-card-title">
+                    {<h4> {members !== title?title:members} </h4>}
                   </div>
                   <p>{info}</p>
                   <button className="email-icon"><FontAwesomeIcon icon={faEnvelope} /></button>

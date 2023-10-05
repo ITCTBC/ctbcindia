@@ -39,7 +39,6 @@ const Carousel = () => {
     const handleTabClick = (index) => {
         clearInterval(intervalId);
         setCurrentImageIndex(index);
-        setActiveTabIndex(index);
     };
 
     return (

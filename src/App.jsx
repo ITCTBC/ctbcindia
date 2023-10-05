@@ -7,7 +7,6 @@ import OurStrength from "./components/OurStrength";
 import HomePopup from "./components/HomePopup";
 import InstagramData from "./components/InstagramData";
 import Carousel from "./components/Carousel";
-import Hero from "./components/Hero";
 import PreLoader from "./components/PreLoader";
 import TopButton from "./components/TopButton";
 import Person from "./components/Person";
@@ -21,6 +20,8 @@ import PersonHero from "./components/personHero";
 import Opportunities from "./components/Opportunities";
 import Projects from "./components/Projects";
 import Events from "./components/Events";
+import CommunityCenters from "./components/CommunityCenters";
+import OurImpact from "./components/OurImpact";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
               <About />
               <OurStrength />
               <InstagramData></InstagramData>
+              <CommunityCenters></CommunityCenters>
+              <OurImpact></OurImpact>
               <HelpUs />
             </>
           }

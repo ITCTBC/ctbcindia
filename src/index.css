@@ -227,10 +227,11 @@ Hero
   background: linear-gradient(rgba(44, 186, 132, 0.7), rgba(0, 0, 0, 0.7)),
     url("./images/main.jpeg") center/cover no-repeat;
 }
+
 .person-hero {
   min-height: 70vh;
   background: var(--clr-primary-5);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7)),
@@ -512,7 +513,8 @@ Featured Tours
 }
 
 /* additional css for different layout*/
-.tour-title {
+
+.people-card-title {
   position: absolute;
   right: 1rem;
   top: 10.5rem;
@@ -976,14 +978,14 @@ Insta Gallery
   object-fit: cover;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 762px) {
   .insta-cards-container {
-    width: 80%;
+    width: 90%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1024px) {
   .insta-cards-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1110,6 +1112,7 @@ Carousel
 }
 
 @media screen and (max-width: 900px) {
+
   .tabs-container,
   .btn-prev-slide,
   .btn-next-slide {
@@ -1184,6 +1187,7 @@ PreLoader
 }
 
 @keyframes waviy {
+
   20%,
   40%,
   100% {
@@ -1701,4 +1705,217 @@ verify certificate section
   text-align: center;
   margin-top: 40px;
   font-size: 18px;
+}
+
+/*
+Community Center styles
+*/
+
+.community-centre-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+  margin: 0 auto;
+  gap: 40px 20px;
+}
+
+.community-centre-card {
+  position: relative;
+}
+
+.community-centre-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.community-centre-card span {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: 600;
+  width: 85%;
+  height: 90px;
+  padding: 20px 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-centre-card span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4px;
+  height: 40px;
+  background-color: rgb(221, 255, 0);
+}
+
+.community-centre-card span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 40px;
+  background-color: rgb(221, 255, 0);
+}
+
+.community-centre-card span div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.community-centre-card span div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background-color: rgb(221, 255, 0);
+}
+
+.community-centre-card span div::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 4px;
+  background-color: rgb(221, 255, 0);
+}
+
+@media screen and (max-width:1024px) {
+  .community-centre-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:572px) {
+  .community-centre-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*
+Our Impact styles
+*/
+
+.our-impact-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 75%;
+  margin: 0 auto;
+  gap: 70px 100px;
+}
+
+.impact-title {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.title-green {
+  color: var(--clr-primary-5);
+}
+
+.impacts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 50px;
+}
+
+.impact-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  padding: 50px 20px 50px 0px;
+}
+
+.impact-card:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -70px;
+  transform: translateY(10%);
+  height: 80%;
+  width: 5px;
+  background-color: black;
+}
+
+.impact-card:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(200%);
+  height: 5px;
+  width: 80%;
+  background-color: black;
+}
+
+.impact-card:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 15px;
+  transform: translateY(20%);
+  height: 80%;
+  width: 5px;
+  background-color: black;
+}
+
+.impact-card:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 90px;
+  transform: translateY(100%);
+  height: 5px;
+  width: 80%;
+  background-color: black;
+}
+
+.impact-icon {
+  font-size: 3.5rem;
+}
+
+.impact-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.impact-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width:1120px) {
+  .our-impact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-title {
+    justify-content: center;
+  }
+
+  .impact-title h5 {
+    font-size: 3rem;
+  }
+
+  .impact-icon {
+    font-size: 2.5rem;
+  }
+
+  .impact-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
 }
