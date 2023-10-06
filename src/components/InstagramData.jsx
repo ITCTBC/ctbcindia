@@ -3,7 +3,9 @@ import Upcoming from "./Upcoming";
 import useInstagramPosts from "../custom hooks/useInstagramPosts";
 
 const InstagramData = () => {
-  const { upcomingData,galleryData, loading, error } = useInstagramPosts();
+  const {  loading, error,instaData } = useInstagramPosts();
+  const upcomingData = instaData.filter(x => x.media_type !== "VIDEO" && x.caption.includes('#upcoming'));
+  const galleryData = instaData.filter(x => x.media_type !== "VIDEO" && x.caption.includes('#ctbcindia')).slice(0,6);
 
   if (loading || error) {
     return <></>;

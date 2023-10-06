@@ -1772,14 +1772,16 @@ Community Center styles
   border: 5px solid rgb(221, 255, 0);
 }
 
-.centre-info h5,p{
-color: white;
-text-align: center;
+.centre-info h5,
+.centre-info p {
+  color: white;
+  text-align: center;
 }
 
 .centre-info h5 {
   font-size: 1.5rem;
 }
+
 .community-centre-card:hover span {
   display: none;
 }
@@ -1973,4 +1975,40 @@ Our Impact styles
   .our-impact-container {
     width: 80%;
   }
+}
+
+/*
+workshop styles
+*/
+
+.workshops-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 60px;
+  position: relative;
+}
+
+.workshop-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+
+.workshop-text {
+  margin-bottom: 60px;
+}
+
+.btn-register-workshop {
+  position: absolute;
+  bottom: 20px;
+  background-color: var(--clr-primary-5);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
 }

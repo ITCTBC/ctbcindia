@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import Title from "./Title";
 
 const Upcoming = ({ upcomingData }) => {
