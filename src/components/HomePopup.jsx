@@ -46,7 +46,7 @@ const HomePopup = () => {
               <form action="" onSubmit={handleSubmit}>
                 <label htmlFor="username">Username</label>
                 <input
-                  type="username"
+                  type="text"
                   name="username"
                   id="username"
                   value={user}

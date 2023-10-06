@@ -917,23 +917,37 @@ Modal
   background-color: white;
 }
 
-/* @media screen and (max-width: 420px){
-  .popup{
-    width: 350px;
-    background-color:transparent;
-    left: 20px;
+@media screen and (max-width: 720px) {
+
+  .popup-content {
+    width: 90%;
+    height: 80vh;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
   }
-    .popup-content {
-      height: 40vh;
-      line-height: 15px;
-    }
-    .popup-close {
-         top: 7px;
-         right: 5px;
-    }
 
+  .popup-close {
+    top: 17px;
+    right: 11px;
+  }
 
-} */
+  .popup-img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .popup-email-input {
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .popup-img {
+    height: 200px;
+  }
+}
 
 /*
 ===============
@@ -1890,6 +1904,8 @@ Our Impact styles
 .impact-amount {
   font-size: 2.5rem;
   font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 
 .impact-name {
@@ -1917,5 +1933,11 @@ Our Impact styles
   .impact-amount {
     font-size: 2.5rem;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width:764px) {
+  .our-impact-container {
+    width: 80%;
   }
 }
