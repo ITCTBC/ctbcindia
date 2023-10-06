@@ -1031,6 +1031,7 @@ Upcoming section
   display: -webkit-box;
   font-size: 18px;
   margin: 0;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1757,6 +1758,38 @@ Community Center styles
   display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.centre-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  border: 5px solid rgb(221, 255, 0);
+}
+
+.centre-info h5,p{
+color: white;
+text-align: center;
+}
+
+.centre-info h5 {
+  font-size: 1.5rem;
+}
+.community-centre-card:hover span {
+  display: none;
+}
+
+.community-centre-card:hover .centre-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .community-centre-card span::before {

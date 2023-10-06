@@ -4,10 +4,10 @@ import img3 from "../images/3.webp";
 import img4 from "../images/4.webp";
 import Title from './Title'
 
-const images = [{ imgSrc: img1, location: 'Agasthyamalai' },
-    { imgSrc: img2, location: 'Biligiri Rangaswamy Temple Tiger Reserve' },
-    { imgSrc: img3, location: 'Darjeeling' },
-    { imgSrc: img4, location: 'Vembanad' }
+const images = [{ imgSrc: img1, location: 'Agasthyamalai', info: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' },
+{ imgSrc: img2, location: 'Biligiri Rangaswamy Temple Tiger Reserve', info: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' },
+{ imgSrc: img3, location: 'Darjeeling', info: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' },
+{ imgSrc: img4, location: 'Vembanad', info: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' }
 ];
 
 const CommunityCenters = () => {
@@ -19,8 +19,12 @@ const CommunityCenters = () => {
                 {images.map((data, i) => <div className="community-centre-card" key={i}>
 
                     <img src={data.imgSrc} alt="community centre location photo" />
-                    <span>{ data.location} <div></div></span>
-                </div> )}
+                    <span>{data.location} <div></div></span>
+                    <div className="centre-info">
+                        <h5>{ data.location}</h5>
+                        <p>{data.info}</p>
+                    </div>
+                </div>)}
             </div>
 
         </section>
