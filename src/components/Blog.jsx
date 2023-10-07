@@ -3,49 +3,43 @@ import img1 from "../images/1.webp";
 const Blog = () => {
   return (
     <>
-      <section className="container-fluid px-0">
-        <div className="row align-items-center"
-       style={{ background: 'lightgreen', color: "black" }}
-                  >
-          <div className="col-md-8 ">
-            <h2>Empowering organizations with local Intelligence </h2>
+      <section className="blog-section">
+        <div className="blog-container">
+          <div className="">
+            <h3>Empowering organizations with local Intelligence </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae, saepe quos fugit doloremque at officiis perferendis, aliquam rerum doloribus deserunt dolorem laborum fugiat dignissimos iusto tenetur corporis consequuntur ducimus nesciunt iure a, nam voluptates? Quibusdam pariatur nemo error distinctio.
             </p>
           </div>
-          <div className="col-md-4">
-            <img src={img1} alt="image" className="img-fluid" />
+          <div className="">
+            <img src={img1} alt="image" className="img-blog" />
           </div>
         </div>
 
-        <div
-          className="row align-items-center"
-          style={{ background: 'skyblue', color: "black" }}
-        >
-          <div className="col-md-4 ">
-            <img src={img1} alt="image" className="img-fluid " />
+        <div className="blog-container-odd">
+          <div className="img-container-odd">
+            <img src={img1} alt="image" className="img-blog " />
           </div>
-          <div className="col-md-8 ">
-            <h2>
-              {" "}
-              Pioneering ArcGis, powerful mapping and analytics software{" "}
-            </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quis.
+          <div className="">
+            <h3>
+              Pioneering ArcGis, powerful mapping and analytics software
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quis. Totam quae, saepe quos fugit doloremque at officiis perferendis, aliquam rerum doloribus deserunt dolorem laborum fugiat dignissimos iusto tenetur corporis consequuntur ducimus nesciunt iure a, nam voluptates? Quibusdam pariatur nemo error distinctio.
             </p>
           </div>
           <br />
         </div>
 
-        <div className="row align-items-center"
-      style={{ background: 'lightgreen', color: "black" }}
-                  >
-          <div className="col-md-8">
-            <h2>
+        <div className="blog-container">
+          <div className="">
+            <h3>
               {" "}
               Pioneering ArcGis, powerful mapping and analytics software{" "}
-            </h2>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quis. Totam quae, saepe quos fugit doloremque at officiis perferendis, aliquam rerum doloribus deserunt dolorem laborum fugiat dignissimos iusto tenetur corporis consequuntur ducimus nesciunt iure a, nam voluptates? Quibusdam pariatur nemo error distinctio.
+            </p>
           </div>
-          <div className="col-md-4">
-            <img src={img1} alt="image" className="img-fluid" />
+          <div className="">
+            <img src={img1} alt="image" className="img-blog" />
           </div>
         </div>
       </section>
@@ -57,14 +51,14 @@ const Blog = () => {
           </div>
           <div className="tour-info">
             <div className="tour-title">
-              
+
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               vitae tempore voluptatum maxime reprehenderit eum quod
               exercitationem fugit, qui corporis.
             </p>
-          
+
           </div>
         </article>
 
@@ -75,14 +69,14 @@ const Blog = () => {
           </div>
           <div className="tour-info">
             <div className="tour-title">
-              
+
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               vitae tempore voluptatum maxime reprehenderit eum quod
               exercitationem fugit, qui corporis.
             </p>
-          
+
           </div>
         </article>
 
@@ -93,14 +87,14 @@ const Blog = () => {
           </div>
           <div className="tour-info">
             <div className="tour-title">
-             
+
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               vitae tempore voluptatum maxime reprehenderit eum quod
               exercitationem fugit, qui corporis.
             </p>
-           
+
           </div>
         </article>
       </div>

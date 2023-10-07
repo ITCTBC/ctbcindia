@@ -2012,3 +2012,64 @@ workshop styles
   font-size: 1rem;
   font-weight: 700;
 }
+
+@media screen and (max-width:1024px) {
+.workshops-container {
+  grid-template-columns: 1fr;
+}
+}
+
+/*
+blog / news styles
+*/
+
+.blog-section {
+margin: 140px auto 100px;
+width: 75%;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px 40px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.blog-container-odd {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px 40px;
+  align-items: center;
+}
+
+.img-blog {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width:972px) {
+  .blog-section {
+width: 85%;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .blog-container-odd {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .img-container-odd {
+    order: 2;
+  }
+
+  .img-blog {
+    height: 300px;
+  }
+}

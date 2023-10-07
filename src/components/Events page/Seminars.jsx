@@ -1,7 +1,7 @@
 import Title from "../Title";
 
 const Seminars = ({ data }) => {
-    
+
     if (data?.length == 0 || !data) {
         return <></>;
     }
@@ -9,7 +9,7 @@ const Seminars = ({ data }) => {
     return (
         <section className="section">
 
-            <Title title={"our"} subTitle={"workshops"} />
+            <Title title={"our"} subTitle={"seminars"} />
 
             <div className='workshops-container'>
                 {data?.map(post => <div key={post?.id} className='insta-card'>
@@ -18,7 +18,6 @@ const Seminars = ({ data }) => {
 
                     <p className='workshop-text'>{post?.caption}</p>
 
-                    <button className="btn-register-workshop">Register</button>
                 </div>)}
             </div>
         </section>
