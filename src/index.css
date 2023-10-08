@@ -73,6 +73,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  margin-top: 60px;
 }
 
 ul {
@@ -1769,7 +1770,18 @@ Community Center styles
   width: 100%;
   height: 100%;
   padding: 20px 20px;
-  border: 5px solid rgb(221, 255, 0);
+  background:
+    linear-gradient(to right, rgb(221, 255, 0) 4px, transparent 4px) 0 0,
+    linear-gradient(to right, rgb(221, 255, 0) 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, rgb(221, 255, 0) 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, rgb(221, 255, 0) 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, rgb(221, 255, 0) 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, rgb(221, 255, 0) 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, rgb(221, 255, 0) 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, rgb(221, 255, 0) 4px, transparent 4px) 100% 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
 }
 
 .centre-info h5,
@@ -1794,50 +1806,26 @@ Community Center styles
   gap: 20px;
 }
 
-.community-centre-card span::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 4px;
-  height: 40px;
-  background-color: rgb(221, 255, 0);
-}
-
-.community-centre-card span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 40px;
-  background-color: rgb(221, 255, 0);
-}
-
 .community-centre-card span div {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.community-centre-card span div::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 4px;
-  background-color: rgb(221, 255, 0);
-}
+.community-centre-card span {
+  background:
+    linear-gradient(to right, rgb(221, 255, 0) 4px, transparent 4px) 0 0,
+    linear-gradient(to right, rgb(221, 255, 0) 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, rgb(221, 255, 0) 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, rgb(221, 255, 0) 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, rgb(221, 255, 0) 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, rgb(221, 255, 0) 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, rgb(221, 255, 0) 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, rgb(221, 255, 0) 4px, transparent 4px) 100% 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 
-.community-centre-card span div::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 40px;
-  height: 4px;
-  background-color: rgb(221, 255, 0);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
 }
 
 @media screen and (max-width:1024px) {
@@ -1877,7 +1865,7 @@ Our Impact styles
 .impacts-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0px 50px;
+  gap: 0px 0px;
 }
 
 .impact-card {
@@ -1885,51 +1873,30 @@ Our Impact styles
   display: flex;
   align-items: center;
   gap: 0 20px;
-  padding: 50px 20px 50px 0px;
+  padding: 50px;
 }
 
-.impact-card:nth-child(2)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -70px;
-  transform: translateY(10%);
-  height: 80%;
-  width: 5px;
-  background-color: black;
+.impact-card:nth-child(1) {
+  background: linear-gradient(to left, black 4px, transparent 4px) 100% 40%;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
 }
 
-.impact-card:nth-child(2)::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateY(200%);
-  height: 5px;
-  width: 80%;
-  background-color: black;
+.impact-card:nth-child(4) {
+  background:
+    linear-gradient(to bottom, black 4px, transparent 4px) 50% 0;
+
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
 }
 
-.impact-card:nth-child(3)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 15px;
-  transform: translateY(20%);
-  height: 80%;
-  width: 5px;
-  background-color: black;
-}
+.impact-card:nth-child(3) {
+  background:
+    linear-gradient(to left, black 4px, transparent 4px) 100% 40%,
+    linear-gradient(to bottom, black 4px, transparent 4px) 50% 0;
 
-.impact-card:nth-child(3)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 90px;
-  transform: translateY(100%);
-  height: 5px;
-  width: 80%;
-  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
 }
 
 .impact-icon {
@@ -1953,6 +1920,10 @@ Our Impact styles
     grid-template-columns: 1fr;
   }
 
+  .impact-card {
+    padding: 40px;
+  }
+
   .impact-title {
     justify-content: center;
   }
@@ -1973,7 +1944,17 @@ Our Impact styles
 
 @media screen and (max-width:764px) {
   .our-impact-container {
-    width: 80%;
+    width: 90%;
+  }
+
+  .impact-card {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:544px) {
+  .our-impact-container {
+    width: 100%;
   }
 }
 
@@ -2014,9 +1995,9 @@ workshop styles
 }
 
 @media screen and (max-width:1024px) {
-.workshops-container {
-  grid-template-columns: 1fr;
-}
+  .workshops-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*
@@ -2024,8 +2005,8 @@ blog / news styles
 */
 
 .blog-section {
-margin: 140px auto 100px;
-width: 75%;
+  margin: 140px auto 100px;
+  width: 75%;
 }
 
 .blog-container {
@@ -2052,7 +2033,7 @@ width: 75%;
 
 @media screen and (max-width:972px) {
   .blog-section {
-width: 85%;
+    width: 85%;
   }
 
   .blog-container {

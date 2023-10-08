@@ -7,7 +7,7 @@ const datas = [
     { icon: faHouseChimneyWindow, impact: 'Livelihoods Impacted', amount: 8000 },
     { icon: faMagnifyingGlass, impact: 'Species Discovered', amount: 44 },
     { icon: faTree, impact: 'Hectres of Forest Secured', amount: 100 },
-    { icon: faScroll, impact: 'Scientific Papers Published', amount: 20 }
+    { icon: faScroll, impact: 'Scientific Papers Published', amount: 2000 }
 ]
 
 const OurImpact = () => {

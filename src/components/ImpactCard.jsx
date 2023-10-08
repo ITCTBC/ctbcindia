@@ -10,7 +10,7 @@ const ImpactCard = ({ data }) => {
         to: { val: data.amount },
         config: { duration: 1000 },
     }));
-console.log(inView)
+    
     return (
         <div className="impact-card" ref={ref}>
             <FontAwesomeIcon className="impact-icon" icon={data.icon} />
